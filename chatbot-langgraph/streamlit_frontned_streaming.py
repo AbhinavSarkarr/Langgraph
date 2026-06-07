@@ -27,7 +27,8 @@ if user_input:
 
     # first add the message to message_history
     with st.chat_message('assistant'):
-
+        
+        #streaming with write_stream and stream_mode = 'messages' to get the message chunks as they arrive and display them in the UI
         ai_message = st.write_stream(
             message_chunk.content for message_chunk, metadata in chatbot.stream(
                 {'messages': [HumanMessage(content=user_input)]},

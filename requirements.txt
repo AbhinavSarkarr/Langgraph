@@ -3,3 +3,4 @@ langchain
 dotenv
 langchain-openai
 streamlit
+langgraph-checkpoint-sqlite
